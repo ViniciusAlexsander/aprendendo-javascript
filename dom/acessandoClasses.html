@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Classes</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        Classes
+    </div>
+    <script>
+        const classes = document.querySelector('div').classList;
+        classes.add('destaque');
+        classes.remove('destaque');
+        classes.toggle('destaque'); //Alternancia se existe ele remove, se não existe ele coloca
+        console.log(classes.contains('destaque'));
+        classes.toggle('destaque');
+        console.log(classes.length);
+
+        classes.add('oi')
+
+        classes.forEach(c => console.log(c));
+    </script>
+</body>
+
+</html>
